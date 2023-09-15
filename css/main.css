@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Mulish', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+h1 {
+    font-size: var(--H1FONT);
+    line-height: var(--H1LINEHEIGHT);
+}
+
+h2 {
+    font-size: var(--H2FONT);
+    line-height: var(--H2LINEHEIGHT);
+}
+
+h3 {
+    font-size: var(--H3FONT);
+    line-height: var(--H3LINEHEIGHT);
+}
+
+p {
+    font-size: var(--NORMALFONT);
+    line-height: var(--NORMALLINEHEIGHT);
+}
+
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --LIGHTGREY: #DDDDDD;
+    --GREY:#F9F9F9;
+    --ORANGE: #FFA149;
+    --GREYTEXT: #555555;
+    --DARKTEXT: #222222;
+    --SECONDARYGREY: #777777;
+    --SECONDARYDARKTEXT: #333333; 
+    --WHITE: #FFFFFF;
+
+    /*  LAPTOP SIZES */
+    --NORMALFONT: 1.125rem;
+    --H1FONT: 3.375REM;
+    --H2FONT: 2.125REM;
+    --H3FONT: 1.5REM;
+    --NORMALLINEHEIGHT: 30.6px;
+    --H1LINEHEIGHT: 75.6px;
+    --H2LINEHEIGHT: 57.8px;
+    --H3LINEHEIGHT: 40.8px;
+
+    /* MOBILE SIZES */
+
+    --MOBILEPFONT : 0.875REM;
+    --MOBILEH1FONT : 2REM;
+    --MOBILEH2FONT : 1.25REM;
+    --MOBILEH3FONT : 1.125REM;
+    --MOBILEPLINEHEIGHT : 23.8px;
+    --MOBILEH1LINEHEIGHT : 44.8px;
+    --MOBILEH2LINEHEIGHT : 34px;
+    --MOBILEH3LINEHEIGHT : 30.6px;
+
+    /* TABLET SIZES */
+
+    --TABLETPFONT: 1REM;
+    --TABLETH1FONT : 2REM;
+    --TABLETH2FONT : 1.75REM;
+    --TABLETH3FONT : 1.5REM;
+    --TABLETPLINEHEIGHT : 27.2px ;
+    --TABLETH1LINEHEIGHT : 44.8px;
+    --TABLETH2LINEHEIGHT : 47.6px;
+    --TABLETH3LINEHEIGHT :40.8px;
+
+}
+
+/* NAV BAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 150px 0 150px;
+}
+
+.logo {
+    font-size: var(--H3FONT);
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    font-size: 1rem;
+}
+
+.nav_cta {
+    width: 148px;
+    height: 48px;
+    background-color: var(--ORANGE);
+    color: var(--WHITE);
+    border: none;
+}
+
+.menu {
+    background: transparent;
+    border: none;
+    display: none
+}
+
